@@ -1,0 +1,63 @@
+"""
+微信的消息格式，注意群发中的两个user字段，一个源自消息的content对象，一个源自消息本身
+"""
+
+私聊
+
+{
+'content': {'data': u'\u4f60\u597d', 'type': 0}, 
+'msg_id': u'6492370713747185689', 
+'msg_type_id': 4,
+'to_user_id': u'@d21110b41585dafa6acf792d141dd1b56dcf4b32eb6e477943c8ce5b6a70cd87', 
+'user': {'id': u'@b5332eac9030a54ed3911663cab0c5c0e2c69070351b30c1bf2bd94f2fd87a08', 'name': u'AndersenChen'}
+}
+
+群发
+
+群名：test
+{
+'content': {'data': u'@\u6167\u59d0  \u4f60\u597d', 
+			'desc': u' \u4f60\u597d', 
+			'type': 0, 
+			'user': {'id': u'@b5332eac9030a54ed3911663cab0c5c0e2c69070351b30c1bf2bd94f2fd87a08', 'name': u'AndersenChen'}, 
+			'detail': [{'type': 'at', 'value': u'\u6167\u59d0'}, {'type': 'str', 'value': u' \u4f60\u597d'}]
+			}, 
+'msg_id': u'6523995510389572536',
+'msg_type_id': 3, 
+'to_user_id': u'@d21110b41585dafa6acf792d141dd1b56dcf4b32eb6e477943c8ce5b6a70cd87', 
+'user': {'id': u'@@176dc8d9a4211bca148767b6bf0dd8c3e3a081d510a0bf78fbb0cfeabb48905d', 'name': 'unknown'}
+}
+
+
+群名：a
+{
+'content': {
+	'data': u'7.10 230', 
+	'desc': u'7.10 230', 
+	'type': 0, 
+	'user': {'id': u'@6a430b5781b8ce7b89de80e4744ee2e1d9670f9dac8bf0e4bc6ab34349a85914', 'name': u'AndersenChen'}, 
+	'detail': [{'type': 'str', 'value': u'7.10 230'}]
+}, 
+'msg_id': u'4007479780518548721', 
+'msg_type_id': 3, 
+'to_user_id': u'@3ff40e2125d176837a6c07df64dd396e22c800ae89947feda361abee13389a28', 
+'user': {'id': u'@@4b9a84620f9722e9d62d5d401554f58ae956b39d030b4eca35a908a376f0816b', 'name': 'unknown'}
+}
+
+群名 ： b
+{'content': {'data': u'y', 'desc': u'y', 'type': 0, 'user': {'id': u'@0710e5240a418d22f0b23fd930fe7a71aa284faedb72cd67b41ce545cd1dcd67', 'name': u'AndersenChen'}, 'detail': [{'type': 'str', 'value': u'y'}]}, 'msg_id': u'2084857504371970983', 'msg_type_id': 3, 'to_user_id': u'@96bde2a22855918569e5c9b86d1be0d27c9ce7bb3a4c590ed6089081dbc7733d', 'user': {'id': u'@@0f09896ab92fcdc39bb0f29bb7b05cea14d834911f98f28f496635e8987849c8', 'name': 'unknown'}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
